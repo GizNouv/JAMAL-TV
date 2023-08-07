@@ -1,0 +1,388 @@
+.home-page {
+    overflow: hidden;
+}
+.home-page .hero-section {
+    background: url(../../../public/asstes/images/home/hero.png);
+    background-size: cover;
+    min-height: 700px;
+    width: 100%;
+}
+.home-page .hero-section .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+.home-page .hero-section .hero-content .main-title {
+    font-size: 4.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+.home-page .hero-section .hero-content .subtitle {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 1.6rem;
+    text-align: center;
+}
+.home-page .hero-section .hero-content form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.home-page .hero-section .hero-content form * {
+    margin: 1.6rem 1.0rem 0;
+}
+.home-page .hero-section .hero-content form input {
+    color: #fff;
+    font-size: 2.4rem;
+    padding: 2.4rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.08) 100%);
+    backdrop-filter: blur(2px);
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* min-width: 589px; */
+    flex : 0 1 600px;
+}
+.home-page .hero-section .hero-content form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.home-page .hero-section .hero-content form button {
+    background: #fff;
+    color: #000;
+    font-size: 2.4rem;
+    padding: 2.4rem 4.0rem;
+    font-weight: bold;
+    border-radius: 100px;
+    /* min-width: 223px; */
+    flex : 0 0 250px;
+}
+.home-page .only-on {
+    background: url(../../../public/asstes/images/home/only-on.png);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 45.5rem;
+}
+.home-page .only-on .only-on-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 12.4rem;
+}
+.home-page h2 {
+    font-size: 4.0rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+}
+.home-page p{
+    font-size: 2.0rem;
+    font-weight: 300;
+}
+.home-page .only-on .only-on-content .six-list {
+    margin-top: 15.2rem;
+    /* margin-bottom: 300rem; */
+    width: 100%;
+}
+
+.home-page .all-devies-section {
+    padding-bottom: 9.6rem;
+}
+.home-page .all-devies-section .container {
+    display: flex;
+    align-items: flex-start;
+}
+.home-page .all-devies-section .container .all-devies-image, .all-devies-content {
+    width: 50%;
+}
+.home-page .all-devies-section .heading {
+    margin-bottom: 4.8rem;
+}
+.home-page .all-devies-section .all-devies-content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.home-page .all-devies-section .all-devies-content .list ul {
+    display: flex;
+    flex-direction: column;
+}
+.home-page .all-devies-section .all-devies-content .list ul li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4.8rem;
+}
+.home-page .all-devies-section .all-devies-content .list ul li .title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.home-page .all-devies-section .all-devies-content .list ul li .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0.4rem;
+}
+.home-page .all-devies-section .all-devies-content .list ul li img {
+    width: 64px;
+    margin-right: 1.6rem;
+}
+.home-page .all-devies-section .all-devies-image {
+    margin-top: 0.8rem;
+}
+.home-page .all-devies-section .all-devies-image img {
+    width: 100%;
+}
+.home-page .sliders-section {
+    padding-bottom: 25.6rem;
+}
+.home-page .benefit-section {
+    padding-bottom: 25.6rem;
+}
+.home-page .benefit-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+}
+.home-page .benefit-section .content-wrapper {
+    width: 33.33%;
+    flex-wrap: wrap;
+    padding: 0 2rem 4rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-page .benefit-section .content-wrapper .image-wrapper {
+    width: 128px;
+    height: 128px;
+}
+.home-page .benefit-section .content-wrapper .image-wrapper img {
+    width: 100%;
+}
+.home-page .benefit-section .content-wrapper .text-wrapper .title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding: 0.8rem 0 0.8rem;
+}
+.home-page .benefit-section .content-wrapper .text-wrapper .subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 1.6rem;
+}
+.home-page .QA-section {
+    padding-bottom: 15.6rem;
+}
+.home-page .QA-section .heading h2 {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+.home-page .send-mail-section {
+    background-image: url(../../../public/asstes/images/home/sendmail.png);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    min-height: 500px;
+    /* padding: 3.2rem; */
+}
+.home-page .send-mail-section .content-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 15.4rem 0;
+}
+.home-page .send-mail-section .content-wrapper .title {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+}
+.home-page .send-mail-section .content-wrapper .email-wrapper {
+    position: relative;
+}
+.home-page .send-mail-section .content-wrapper .email-wrapper .buttons_letsGo__3hlvU {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.home-page .send-mail-section .content-wrapper .email-wrapper input {
+    border: 1px solid #D9D9D9;
+    padding: 2.4rem;
+    border-radius: 100px;
+    font-size: 2.4rem;
+    color: #fff;
+    width: 100%;
+}
+
+.showLoader {
+    position: relative;
+    top: 50%;
+    transform: translateY(200%);
+    width: 1440px;
+    padding: 5.6rem 0!important;
+    margin: 0 auto;
+}
+
+/* @media all and (max-width : 1000px) {
+    .home-page .all-devies-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+} */
+
+@media all and (max-width : 1250px) {
+    /* BENEFIT SECTION */
+    .home-page .benefit-section .container {
+        flex-wrap: wrap;
+    }
+    .home-page .benefit-section .content-wrapper {
+        justify-content: flex-start;
+        width: 50%;
+    }
+    .home-page .benefit-section .content-wrapper:last-child {
+        width: 100%;
+    }
+}
+
+@media all and (max-width : 905px) {
+    /* GENERAL */
+    .home-page h2 {
+        font-size: 3.2rem;
+    }
+    .home-page p{
+        font-size: 1.8rem;
+    }
+
+    /* HERO SECTION */
+    .home-page .hero-section .hero-content .main-title {
+        font-size: 3.2rem;
+    }
+    .home-page .hero-section .hero-content .subtitle {
+        font-size: 1.8rem;
+    }
+    .home-page .hero-section .hero-content form input {
+        font-size: 1.8rem;
+        flex : 0 1 500px;
+    }
+    .home-page .hero-section .hero-content form button {
+        font-size: 1.8rem;
+        flex : 0 0 auto;
+    }
+
+    /* ONLY ON JAMAL */
+    .home-page .only-on {
+        margin-bottom: 18.5rem;
+    }
+    .home-page .only-on .only-on-content {
+       align-items: center;
+       text-align: center;
+    }
+    .home-page .only-on .only-on-content .six-list {
+        margin-top: 8.2rem;
+    }
+
+    /* ALL DEVIES */
+    .home-page .all-devies-section .container .all-devies-image, .all-devies-content {
+        width: 100%;
+    }
+    .home-page .all-devies-section .heading {
+        text-align: center;
+    }
+    .home-page .all-devies-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-page .all-devies-section .all-devies-content .list ul {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .home-page .all-devies-section .all-devies-content .list ul li {
+        flex-direction: column;
+        justify-content:  center;
+        padding-inline : 1.6rem;
+        text-align: center;
+    }
+    .home-page .all-devies-section .all-devies-content .list ul li img {
+        margin: 0 0 0.8rem;
+    }
+    .home-page .all-devies-section .all-devies-content .list ul li .title {
+        font-size: 1.4rem;
+    }
+    .home-page .all-devies-section .all-devies-content .list ul li .subtitle {
+        font-size: 1rem;
+    }
+    .home-page .all-devies-section .all-devies-image {
+        max-width: 80%;
+    }
+
+    /* BENEFIT SECTION */
+    .home-page .benefit-section .content-wrapper .image-wrapper {
+        width: 96px;
+        height: 96px;
+    }
+    .home-page .benefit-section .content-wrapper .text-wrapper .title {
+        font-size: 2rem;
+    }
+    .home-page .benefit-section .content-wrapper .text-wrapper .subtitle {
+        font-size: 1.6rem;
+    }
+
+    /* SEND-MAIL-SECTION  */
+    .home-page .send-mail-section .content-wrapper{
+        width: 100%;
+    }
+    .home-page .send-mail-section .content-wrapper .title {
+        font-size: 2.4rem;
+    }
+    .home-page .send-mail-section .content-wrapper .email-wrapper input {
+        font-size: 2rem;
+    }
+
+}
+
+@media all and (750px <= width <= 767px) {
+    /* ONLY ON JAMAL */
+    .home-page .only-on {
+        margin-bottom: 50rem;
+    }
+}
+
+@media all and (max-width : 750px) {
+    /* ONLY ON JAMAL */
+    .home-page .only-on {
+        margin-bottom: 46rem;
+    }
+  
+}
+
+@media all and (max-width : 560px) {
+      /* HERO SECTION */
+    .home-page .hero-section .hero-content form input {
+        flex : 0 1 365px;
+    }
+
+    .home-page .sliders-section {
+        padding-bottom: 15.6rem;
+    }
+
+    /* BENEFIT SECTION */
+    .home-page .benefit-section {
+        padding-bottom: 15.6rem;
+    }
+    .home-page .benefit-section .container {
+        flex-direction: column;
+    }
+    .home-page .benefit-section .content-wrapper {
+        width: 100%;
+    }
+}
+
+@media all and (max-width : 500px) {
+    .home-page .send-mail-section .content-wrapper .email-wrapper .buttons_letsGo__3hlvU {
+        position: static;
+        margin-top: 1.6rem;
+    }
+}

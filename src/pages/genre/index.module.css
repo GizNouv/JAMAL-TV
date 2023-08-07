@@ -1,0 +1,61 @@
+/* .genre-page {
+    margin-top: 4rem;
+} */
+/* div.column {
+    width: 30%;
+} */
+.genrePage {
+    margin-bottom: 5.6rem;
+}
+.contentWrapper {
+    position: relative;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* padding-left: 1.6rem; */
+}
+/* .contentWrapper  > * {
+    width: 50%;
+    height: 100%;
+} */
+.imageWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.textWrapper {
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0 0;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+.textWrapper::after {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(0,0,0,0.5) 100%);
+    z-index: 5;
+}
+.textWrapper h2 {
+    padding-left: 1.6rem;
+    position: absolute;
+    font-weight: 400;
+    font-size: 4rem;
+    z-index: 10;
+}
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 10px 10px;
+}

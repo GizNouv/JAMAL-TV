@@ -1,0 +1,256 @@
+.adminPage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    background-image: url(../../../public/asstes/images/admin/wrapper.jpg);
+    background-size: cover;
+    padding: 8rem 5rem;
+    /* display: flex;
+    justify-content: center; */
+}
+/* .adminPage::before {
+    
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), #2D3037;
+} */
+.adminPage .wrapper {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    border-radius: 30px;
+    margin: 0 auto;
+    background: #fff;
+    max-width: 1720px;
+    height: 800px;
+    color: #334D6B;
+    overflow: hidden;
+    box-shadow: 0px 0px 27px 10px rgba(0, 0, 0, 0.25);
+}
+.adminPage .wrapper > * {
+    width: 50%;
+}
+.adminPage .wrapper .leftSide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* flex-shrink: 2; */
+    animation-name: slide-in;
+    animation-duration : 5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode :backwards;
+}
+.adminPage .wrapper .leftSide img  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+/* @keyframes slide-in {
+    0% {
+        transform: rotateZ(0);
+      }
+      25% {
+        transform: rotateZ(45deg);
+      }
+    50% {
+        transform: rotateZ(90deg);
+    }
+    75% {
+        transform: rotateZ(135deg);
+    }
+    100% {
+        transform: rotateZ(180deg);
+    }
+  } */
+.adminPage .wrapper .rightSide{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    height: 100%;
+    width: 860px;
+    /* min-width: 100%; */
+    /* flex-shrink: 1; */
+}
+.adminPage .wrapper .rightSide .contentHolder {
+    padding: 3.2rem 4rem;
+}
+.adminPage .wrapper .rightSide .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.adminPage .wrapper .rightSide .header .logo {
+    font-weight: 600;
+}
+.adminPage .wrapper .rightSide .header .profile {
+    display: flex;
+    align-items: center;
+
+}
+.adminPage .wrapper .rightSide .header .profile .imageHolder {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: linear-gradient(138deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%);
+    box-shadow: -2px -4px 14px -2px rgba(255, 255, 255, 0.10) inset, 2px 6px 9px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.adminPage .wrapper .rightSide .header .profile .imageHolder img {
+    width: 70%;
+    border-radius: 100%;
+}
+.adminPage .wrapper .rightSide .header .profile .text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 0.8rem;
+}
+.adminPage .wrapper .rightSide .header .profile .text .name {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+.adminPage .wrapper .rightSide .header .profile .text .status {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.adminPage .wrapper .rightSide .formHolder {
+    width: 100%;
+    padding-right: 4rem;
+}
+.adminPage .wrapper .rightSide .formHolder form {
+    display: grid;
+    grid-template-columns: repeat(2 , 50%);
+    /* grid-template-rows: repeat(5 , 70px); */
+    column-gap: 4rem;
+    row-gap: 4rem;
+}
+.adminPage .wrapper .rightSide .formHolder form .box {
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 4rem; */
+}
+.adminPage .wrapper .rightSide .formHolder form .box label {
+    font-size: 2rem;
+    font-weight: 500;
+    /* height: 30%; */
+    margin-bottom: 1.6rem;
+}
+.adminPage .wrapper .rightSide .formHolder form .box input {
+    border: 1px solid lightgray;
+    height: 60px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 2.4rem;
+    padding-inline: 1.6rem;
+}
+.adminPage .wrapper .rightSide .formHolder form .box4 input {
+    border: 0;
+    font-size: 1.6rem;
+}
+.adminPage .wrapper .rightSide .formHolder form .box3 input {
+    border: 0;
+}
+.adminPage .wrapper .rightSide .formHolder form .box4 .ant-picker .css-dev-only-do-not-override-12jzuas {
+    width: 100%;
+}
+.adminPage .wrapper .rightSide .formHolder form .box7 {
+    grid-column: 1/3;
+}
+.adminPage .wrapper .rightSide .formHolder form .box7 input {
+    display: flex;
+    align-items: center;
+    background: rgb(217, 217, 217 , 0.5);
+}
+.adminPage .wrapper .rightSide .formHolder form .box7 input[type="file"]::-webkit-file-upload-button {
+    display: none;
+}
+
+.adminPage .wrapper .rightSide .formHolder form .box8 button{
+    height: 100%;
+    width: 100%;
+    background: #334D6B;
+    color: #fff;
+    padding: 1.6rem 3.2rem ;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ReqStatus1 {
+    width: fit-content;
+    /* display: none; */
+    display: inline-block;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #5CB270 0%, #82C26E 48.96%, #A8D26D 100%);
+    position : absolute;
+    right: 0;
+    bottom: 3.2rem;
+    text-align: right;
+    padding: 0.8rem 1.6rem;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-right: 4rem;
+    transform: translateX(200vw);
+    transition: transform 1s ease-in-out, opacity 2s ease-in-out;
+    opacity: 0;
+}
+#ReqStatus2 {
+    width: fit-content;
+    /* display: none; */
+    display: inline-block;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #9D0208 0%, #D00000 100%);
+    position : absolute;
+    right: 0;
+    bottom: 3.2rem;
+    text-align: right;
+    padding: 0.8rem 1.6rem;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-right: 4rem;
+    transform: translateX(200vw);
+    transition: transform 1s ease-in-out, opacity 2s ease-in-out;
+    opacity: 0;
+}
+
+#requestStatus {
+  margin-right: 0.8rem;
+  pointer-events: none;
+}
+
+#ReqStatus1.show , #ReqStatus2.show {
+    transform: translateX(0);
+    transition: transform 1s ease-in-out, opacity 2s ease-in-out;
+    opacity: 1;
+}
+
+@media all and (max-width : 975px) {
+    .adminPage .wrapper .rightSide {
+        width: 100%;
+    }
+}
+
+@media all and (max-width : 680px) {
+    .adminPage .wrapper .rightSide .header .logo {
+        font-size: 3.2rem;
+    }
+}

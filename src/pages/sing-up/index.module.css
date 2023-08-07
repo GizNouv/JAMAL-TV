@@ -1,0 +1,193 @@
+.wrapper {
+    background-image: url("../../../public/asstes/images/sign-up/signUp.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.wrapper .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentWapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.15) 100%);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+.cloesIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #1C1A42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+.title {
+    font-size: 3.2rem;
+    color: #1C1A42;
+    text-align: center;
+}
+.contentWapper .formWrapper {
+    padding: 4rem;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.formWrapper.SignUp {
+    position: absolute;
+    transform: translateX(0);
+    /* transition: transform 0.5s ; */
+}
+.formWrapper.SignUp.active {
+    transform: translateX(600px);
+}
+.formWrapper.logIn {
+    /* transition: transform 0.5 ; */
+    transform: translateX(-600px);
+}
+.formWrapper.logIn.active {
+    /* transition: transform 0.5 ; */
+    transform: translateX(0);
+    /* display: block; */
+}
+.inputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #1C1A42;
+    font-size: 1.6rem;
+    margin: 3rem 0;
+}
+.inputBox input:focus~label, .inputBox input:valid~label {
+    top: -16px;
+    opacity: 0.5;
+}
+.inputBox input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0 3.2rem 0 0.5rem;
+    
+}
+.inputBox label {
+    position: absolute;
+    top: 25%;
+    left: -5px;
+    font-weight: 800;
+    color: #1C1A42;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+.inputBox .icon {
+    position: absolute;
+    right: 8px;
+    color: #1C1A42;
+    line-height: 57px;
+}
+.contentWapper form button {
+    width: 100%;
+    height: 45px;
+    font-size: 2rem;
+    background: #1C1A42;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 3.2rem;
+}
+.agreement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.2rem;
+    font-size: 1.4rem;
+    color: #1C1A42;
+    gap: 0.8rem
+}
+.switch {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #1C1A42;
+    font-weight: 600;
+}
+.switch span {
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#ReqStatus1 {
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    /* background: linear-gradient(180deg, #1C1A42 8.33%, #323C6D 100%); */
+    color :#1C1A42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    padding: 2.4rem;
+    transition: transform 1s ease-in-out;
+}
+#ReqStatus2 {
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #FFF; */
+    background: linear-gradient(180deg, #1C1A42 8.33%, #323C6D 100%);
+    color :#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    padding: 2.4rem;
+    transition: transform 1s ease-in-out;
+}
+
+#ReqStatus1.show , #ReqStatus2.show {
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+#ReqStatus1 svg , #ReqStatus2 svg {
+    font-size: 8rem;
+}
+#ReqStatus1 .requestStatus , #ReqStatus2 .requestStatus {
+    margin-top: 1.6rem;
+    text-align: center;
+}
+
+@media all and (max-width : 550px) {
+    .contentWapper {
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+}

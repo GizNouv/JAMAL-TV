@@ -1,0 +1,69 @@
+.signUp {
+    background: #ffffff;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 1.1rem 1.6rem;
+    margin: 0 0.8rem;
+}
+.signUp:hover {
+    cursor: pointer;
+}
+.userIcon {
+    margin-right: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.CloseSreach {
+    font-size: 2.4rem;
+    transition: 0.15s;
+}
+.CloseSreach:hover {
+    cursor: pointer;
+    color: #1677ff;
+}
+.letsGo {
+    width: fit-content;
+    display: block;
+    display: flex;
+    padding: 2.3rem 4rem;
+    background: #fff;
+    border-radius: 100px;
+}
+.letsGo span {
+    color: #1E1E1E;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-right: 0.8rem;
+}
+.MoreDetails {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1E1E1E;
+    background: #fff;
+    padding: 2.4rem 1.6rem;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+@media all and (max-width : 905px) {
+    .letsGo span {
+        font-size: 2rem;
+    }
+    .letsGo img {
+        width: 2.8rem;
+    }
+}
+
+@media all and (max-width : 700px) {
+    .MoreDetails {
+        font-size: 1.6rem;
+    }   
+}
+
+@media all and (max-width : 500px) {
+    .CloseSreach span:nth-child(2) {
+        display: none;
+    }
+}
