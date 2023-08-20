@@ -1,6 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
 import './index.css'
-import MovieDetails from "../../Components/six-list";
 import OnlyOnJamal from "../../Components/onlyjamal"
 import Series, { App } from "../series";
 import Divider from "../../Components/divider";
@@ -9,7 +8,6 @@ import Collapse from "../../Components/collapse";
 import { LetsGo } from "../../Components/buttons";
 import { motion } from "framer-motion";
 import LoadingScreen from "../../Components/loadingScreen";
-import CircleLoader from "react-spinners/CircleLoader";
 
 
 
@@ -104,6 +102,7 @@ export default function Home(){
                     </div>
                     <div className="all-devies-image">
                         <img src="asstes/images/home/devices.png"/>
+                        
                     </div>
                 </div>
             </div>
